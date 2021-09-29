@@ -8,6 +8,8 @@ source/
 !*.apv
 !*.vsd
 !*.clw
+!*.md
+!AttachConsole.lib
 !up_vcsettings.ini
 /GPUCache/
 /log/
