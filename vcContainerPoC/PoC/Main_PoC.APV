@@ -1,0 +1,30 @@
+[MODULE]
+NAME 'Main_PoC.clw'
+[COMMON]
+FROM ABC GENERATED
+[PROCEDURE]
+NAME Main
+[COMMON]
+FROM ABC Source
+[DATA]
+[SCREENCONTROLS]
+! PROMPT('CL:'),USE(?CL:Prompt)
+! ENTRY(@s20),USE(CL),MSG('Command Line Utility'),TIP('Command Line Utility')
+[REPORTCONTROLS]
+! STRING(@s20),USE(CL)
+CL                       PoCCommandLine !Command Line Utility
+!!> GUID('ca353d24-ea52-470d-8b81-c27fccfffab6'),PROMPT('CL:'),HEADER('CL'),MESSAGE('Command Line Utility'),TOOLTIP('Command Line Utility'),PICTURE(@s20),TYPEMODE(INS)
+[PROMPTS]
+%GenerateOpenClose LONG  (0)
+%GenerateSaveRestore LONG  (0)
+[EMBED]
+EMBED %ProcessedCode
+[DEFINITION]
+[SOURCE]
+PROPERTY:BEGIN
+PRIORITY 5000
+PROPERTY:END
+  CL.WriteLine('HelloWorld!')
+[END]
+[END]
+[END]

@@ -1,0 +1,17 @@
+obj/
+source/
+*.*
+!.gitignore
+!*.cwproj
+!*.dct
+!*.sln
+!*.apv
+!*.vsd
+!*.clw
+!up_vcsettings.ini
+/GPUCache/
+/log/
+/locales/
+/ckeditor4basic/
+/ckeditor4full/
+/ckeditor4standard/

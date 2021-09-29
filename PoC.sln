@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# Clarion 2.1.0.2447
+Project("{12B76EC0-1D7B-4FA7-A7D0-C524288B48A1}") = "PoC", "PoC.cwproj", "{ADB1A5CF-2CAA-4129-A3AE-077F294C9389}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{{2150E333-8FDC-42A3-9474-1A3956D46DE8}}"
+	ProjectSection(SolutionItems) = postProject
+		PoC.app = PoC.app
+	EndProjectSection
+EndProject
+Project("{12B76EC0-1D7B-4FA7-A7D0-C524288B48A1}") = "WriteConsole", "WriteConsole.cwproj", "{E25463F4-53BA-432F-B3AF-35E0C257BD5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADB1A5CF-2CAA-4129-A3AE-077F294C9389}.Debug|Win32.Build.0 = Debug|Win32
+		{ADB1A5CF-2CAA-4129-A3AE-077F294C9389}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ADB1A5CF-2CAA-4129-A3AE-077F294C9389}.Release|Win32.Build.0 = Release|Win32
+		{ADB1A5CF-2CAA-4129-A3AE-077F294C9389}.Release|Win32.ActiveCfg = Release|Win32
+		{E25463F4-53BA-432F-B3AF-35E0C257BD5F}.Debug|Win32.Build.0 = Debug|Win32
+		{E25463F4-53BA-432F-B3AF-35E0C257BD5F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E25463F4-53BA-432F-B3AF-35E0C257BD5F}.Release|Win32.Build.0 = Release|Win32
+		{E25463F4-53BA-432F-B3AF-35E0C257BD5F}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+EndGlobal
