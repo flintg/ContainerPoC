@@ -24,7 +24,7 @@
 !---------------------------------------------------------------------------------------------------------
 
 !---------------------------------------------------------------------------------------------------------
-! Adapted from ClarionHub post by brahn: 
+! Adapted from ClarionHub post by Brahn Partridge (1977–2021) 
 !  [https://clarionhub.com/t/using-writeconsolea-from-a-clarion-application/1734]
 !
 ! If compiling in Clarion 9.1:

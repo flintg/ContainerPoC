@@ -21,7 +21,7 @@
 !---------------------------------------------------------------------------------------------------------
 
 !---------------------------------------------------------------------------------------------------------
-! Taken from ClarionHub post by brahn: 
+! Taken from ClarionHub post by Brahn Partridge (1977–2021) 
 !  [https://clarionhub.com/t/using-writeconsolea-from-a-clarion-application/1734]
 !
 ! If compiling in Clarion 9.1:
@@ -61,7 +61,7 @@ STD_OUTPUT_HANDLE EQUATE(-11)
         *LPDWORD lpNumberOfCharsWritten, |
         LPVOID  lpReserved),BYTE,PASCAL,RAW,PROC
     END
-WriteLine PROCEDURE(STRING pMessage)
+WCWriteLine PROCEDURE(STRING pMessage)
   END
 
 !---------------------------------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ Window    WINDOW('Test WriteConsole'),AT(,,101,43),GRAY,FONT('Microsoft Sans Ser
   ! If /Q is present on the command line, just write a message and exit. Do not proceed to opening a window
   !---------------------------------------------------------------------------------------------------------
   IF COMMAND('/q')
-    WriteLine('HelloWorld!')
+    WCWriteLine('HelloWorld!')
     RETURN
   END
   
@@ -93,7 +93,7 @@ Window    WINDOW('Test WriteConsole'),AT(,,101,43),GRAY,FONT('Microsoft Sans Ser
     ! When the ButtonTest button is pressed, write "Hi!" to the console
     !---------------------------------------------------------------------------------------------------------
     IF Event() = EVENT:Accepted AND Accepted() = ?ButtonTest
-      WriteLine('Hi!')
+      WCWriteLine('Hi!')
     END
   END
 
@@ -102,7 +102,7 @@ Window    WINDOW('Test WriteConsole'),AT(,,101,43),GRAY,FONT('Microsoft Sans Ser
 !!!<param name="pMessage">String to write to the console. Input is not sanitized before sending to the console.</param>
 !!!<remarks>Two additional characters are added to the end of the string: 10,0 </remarks>
 !---------------------------------------------------------------------------------------------------------
-WriteLine PROCEDURE(STRING pMessage)
+WCWriteLine PROCEDURE(STRING pMessage)
 !---------------------------------------------------------------------------------------------------------
 ! Declare local variables
 !  * conHandle is the handle to the console of the parent process
